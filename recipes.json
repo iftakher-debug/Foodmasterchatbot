@@ -1,0 +1,185 @@
+{
+  "recipes": [
+    {
+      "title": "Chicken Biryani",
+      "cuisine": "South Asian",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "dietary": [],
+      "ingredients": [
+        "chicken",
+        "basmati rice",
+        "onions",
+        "tomatoes",
+        "yoghurt",
+        "ginger and garlic",
+        "biryani spices",
+        "coriander"
+      ],
+      "steps": [
+        "Fry the onions until golden.",
+        "Add ginger, garlic, spices and chicken.",
+        "Stir in tomatoes and yoghurt.",
+        "Layer with partly cooked rice and cook on a low heat until the chicken and rice are done."
+      ],
+      "aliases": [
+        "chicken biriyani",
+        "biryani",
+        "biriyani"
+      ]
+    },
+    {
+      "title": "Shakshuka",
+      "cuisine": "North African and Middle Eastern",
+      "meal_types": [
+        "breakfast",
+        "brunch",
+        "lunch"
+      ],
+      "dietary": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        "eggs",
+        "onion",
+        "red pepper",
+        "chopped tomatoes",
+        "garlic",
+        "paprika",
+        "cumin",
+        "olive oil"
+      ],
+      "steps": [
+        "Soften the onion and pepper in olive oil.",
+        "Add garlic, paprika and cumin.",
+        "Add tomatoes and simmer until thick.",
+        "Add the eggs and cook until the whites are set."
+      ],
+      "aliases": [
+        "shakshouka"
+      ]
+    },
+    {
+      "title": "Vegetable Fried Rice",
+      "cuisine": "East Asian inspired",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "dietary": [
+        "vegetarian",
+        "vegan"
+      ],
+      "ingredients": [
+        "cooked rice",
+        "carrots",
+        "peas",
+        "spring onions",
+        "soy sauce",
+        "oil"
+      ],
+      "steps": [
+        "Prepare the vegetables.",
+        "Heat oil in a pan and cook the vegetables.",
+        "Add the rice and soy sauce.",
+        "Stir-fry until everything is hot."
+      ],
+      "aliases": [
+        "vegetable rice",
+        "veggie fried rice"
+      ]
+    },
+    {
+      "title": "Pasta Arrabbiata",
+      "cuisine": "Italian",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "dietary": [
+        "vegetarian",
+        "vegan"
+      ],
+      "ingredients": [
+        "pasta",
+        "tomatoes",
+        "garlic",
+        "chilli flakes",
+        "olive oil",
+        "parsley"
+      ],
+      "steps": [
+        "Cook the pasta following the packet instructions.",
+        "Warm garlic and chilli in olive oil.",
+        "Add tomatoes and simmer to make a sauce.",
+        "Mix the sauce with the pasta and add parsley."
+      ],
+      "aliases": [
+        "arrabbiata",
+        "spicy pasta"
+      ]
+    },
+    {
+      "title": "Banana Pancakes",
+      "cuisine": "Breakfast favourite",
+      "meal_types": [
+        "breakfast",
+        "brunch"
+      ],
+      "dietary": [
+        "vegetarian"
+      ],
+      "ingredients": [
+        "banana",
+        "flour",
+        "milk",
+        "egg",
+        "baking powder",
+        "oil"
+      ],
+      "steps": [
+        "Mash the banana.",
+        "Mix it with flour, milk, egg and baking powder.",
+        "Cook small portions in a lightly oiled pan.",
+        "Turn when bubbles appear and cook the other side."
+      ],
+      "aliases": [
+        "banana pancake"
+      ]
+    },
+    {
+      "title": "Lentil Dahl",
+      "cuisine": "South Asian",
+      "meal_types": [
+        "lunch",
+        "dinner"
+      ],
+      "dietary": [
+        "vegetarian",
+        "vegan"
+      ],
+      "ingredients": [
+        "red lentils",
+        "onion",
+        "tomatoes",
+        "turmeric",
+        "cumin",
+        "garlic",
+        "water"
+      ],
+      "steps": [
+        "Rinse the lentils.",
+        "Cook the onion, garlic and spices in a little oil.",
+        "Add lentils, tomatoes and water.",
+        "Simmer until the lentils are soft and the mixture thickens."
+      ],
+      "aliases": [
+        "dal",
+        "dhal",
+        "lentil dal"
+      ]
+    }
+  ]
+}

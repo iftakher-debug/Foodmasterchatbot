@@ -1,0 +1,342 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "pattern": "\\b(?:hello|hi|yo|hey|wassup|hiya|good morning|good afternoon|good evening)\\b",
+      "responses": [
+        "Hiya, Welcome to Foodmaster. The master of food. What are you hungry for today? If you want food fact type any from the list- Umami, Fermentation, Al dente, Roux, Tempering spices, Mise en place ?",
+        "Hi there! Would you like a recipe or a food fact. If you want food fact type any from the list- Umami, Fermentation, Al dente, Roux, Tempering spices, Mise en place",
+        "Welcome, Would you like a recipe or a food fact. If you want food fact type any from the list- Umami, Fermentation, Al dente, Roux, Tempering spices, Mise en place ?"
+      ]
+    },
+    {
+      "tag": "identity",
+      "pattern": "\\b(?:who are you|what is your name|what can you do|what do you do)\\b",
+      "responses": [
+        "I am Foodmaster, the master of food recipes and knowledge. I can also chat about other topics."
+      ]
+    },
+    {
+      "tag": "help",
+      "pattern": "\\b(?:help|i need help|what can i ask you|how can you help me|what can i ask|what do you do|what is your job)\\b",
+      "responses": [
+        "You can ask me about recipes, ingredients, food facts, cooking times, food preferences or general topics.",
+        "Try asking for a recipe, asking what a food term means, or telling me what food you like."
+      ]
+    },
+    {
+      "tag": "menu",
+      "pattern": "\\b(?:menu|menus|recipe|recipes| what recipes do you have|what can i cook|what dishes do you have|list your recipes|show me your recipes|show your recipes|what recipes can you make|what do you have available)\\b",
+      "responses": [
+        "I currently have these recipes: {menu_list}. You can ask about any dish by name.",
+        "Here is my recipe list: {menu_list}. Which one would you like to explore?"
+      ],
+      "phrases": [
+        "menu",
+        "menus",
+        "what is on the menu",
+        "what's on the menu",
+        "show me the dishes",
+        "list the dishes",
+        "what food do you have",
+        "what recipes do you have",
+        "what recipes are available",
+        "do you have recipes",
+        "any recipes",
+        "what dishes do you have",
+        "show your recipes",
+        "list your recipes",
+        "what can i cook",
+        "what recipes can you make",
+        "what do you have available"
+      ]
+    },
+    {
+      "tag": "name",
+      "pattern": "\\b(?:my name is|i am called|call me) (?P<name>[A-Za-z][A-Za-z'-]*)",
+      "responses": [
+        "Nice to meet you, {name}! I will remember your name during this chat.",
+        "Thanks for introducing yourself, {name}. What would you like to cook?"
+      ]
+    },
+    {
+      "tag": "remember",
+      "pattern": "\\b(?:what do you remember|what do you know about me|what are my preferences)\\b",
+      "responses": [
+        "Here is what I remember from this chat: {details}."
+      ]
+    },
+    {
+      "tag": "preference",
+      "pattern": "\\b(?:i\\s+(?:really\\s+|quite\\s+|also\\s+)?(?:prefer|like|love|enjoy)) (?P<preference>[A-Za-z ]+)",
+      "responses": [
+        "Got it. I will remember that you prefer {preference} during this chat.",
+        "Thanks, I will keep your {preference} preference in mind."
+      ]
+    },
+    {
+      "tag": "diet",
+      "pattern": "\\b(?:i am|i'm|im) (?P<diet>vegetarian|vegan)\\b",
+      "responses": [
+        "Thanks for telling me. I will look for {diet} recipes when I make suggestions."
+      ]
+    },
+    {
+      "tag": "favourite_food",
+      "pattern": "\\b(?:what is|what's) your favourite food\\b",
+      "responses": [
+        "I do not eat food myself, but I can help you explore lots of dishes. What do you enjoy?",
+        "I cannot taste food, but I would be interested to hear your favourite dish."
+      ]
+    },
+    {
+      "tag": "cooking_interest",
+      "pattern": "\\bdo you like cooking\\b",
+      "responses": [
+        "I do not cook myself, but I enjoy helping people plan meals and learn recipes."
+      ]
+    },
+    {
+      "tag": "cooking_ability",
+      "pattern": "\\bcan you cook\\b",
+      "responses": [
+        "I cannot physically cook, but I can explain recipes and cooking steps."
+      ]
+    },
+    {
+      "tag": "food_joke",
+      "pattern": "\\b(?:tell me a food joke|food joke|joke)\\b",
+      "responses": [
+        "Why did the tomato turn red? It saw the salad dressing!",
+        "What do you call cheese that is not yours? Nacho cheese!"
+      ]
+    },
+    {
+      "tag": "balanced_meal",
+      "pattern": "\\bbalanced meal\\b",
+      "responses": [
+        "A balanced meal often includes vegetables or fruit, a source of protein and a source of carbohydrates. Needs can vary between people."
+      ]
+    },
+    {
+      "tag": "food_fact",
+      "pattern": "\\b(?:what is|tell me about|explain) (?P<topic>[A-Za-z ]+)",
+      "responses": [
+        "{topic}: {fact}",
+        "Here is what I have about {topic}: {fact}"
+      ]
+    },
+    {
+      "tag": "recommend_recipe",
+      "pattern": "\\b(?:suggest|recommend)\\b",
+      "responses": [
+        "You could try {recipe}, a {cuisine} dish. Would you like the ingredients or the steps?",
+        "My suggestion is {recipe} ({cuisine}). Would you like to see how to make it?"
+      ],
+      "phrases": ["recommend","suggest","recipe suggestion", "what should i cook", "what should i make", "what can i cook",
+        "what can i make", "what could i make", "what could i cook",
+        "what can i eat", "im hungry","i am hungry",
+        "im starving","dinner idea","dinner ideas","meal idea","meal ideas",
+        "any ideas","something for dinner","something to cook","something to eat",
+        "give me an idea","give me a recipe","i need a recipe",
+        "i want a recipe", "can you give me a recipe","can you suggest a recipe","could you recommend a recipe", "recipe please",
+        "what's for dinner", "whats for dinner","i feel like eating", "i am craving"]
+    },
+    {
+      "tag": "recipe",
+      "pattern": "\\b(?:show me|give me|find)\\b",
+      "responses": ["Here is the full recipe for {recipe}. Ingredients: {ingredients}. Steps: {steps}"],
+      "phrases": ["recipe","make it","cook it","show me how","how is it made"],
+      "both_phrases": ["both","everything","full recipe","all of it"]
+    },
+    
+    {
+      "tag": "ingredients",
+      "pattern": "\\b(?:ingredient|ingredients|shopping list)\\b",
+      "responses": [
+        "For {recipe}, you need: {ingredients}. Would you also like the cooking steps?"
+      ],
+      "phrases": [
+        "ingredient",
+        "ingredients",
+        "what do i need",
+        "what goes in",
+        "what goes into",
+        "what is in it",
+        "what's in it",
+        "shopping list",
+        "what do i put in",
+        "what to put in",
+        "what should i add",
+        "what is needed",
+        "what's needed",
+        "what is required",
+        "what do i need to buy",
+        "items needed",
+        "things i need",
+        "what does it need",
+        "what do i have to buy",
+        "list of ingredients",
+        "list of items",
+        "what should i buy",
+        "what do i require",
+        "what should i get",
+        "what should i pick up",
+        "what do i need to get",
+        "things needed",
+        "what does it contain",
+        "what does that contain",
+        "what is in that",
+        "whats in that",
+        "what goes in that",
+        "what goes into that",
+        "what stuff do i need",
+        "stuff i need"
+      ]
+    },
+    {
+      "tag": "recipe_steps",
+      "pattern": "\\b(?:step|steps|method|instructions|how to make|how to cook)\\b",
+      "responses": [
+        "Here are the cooking steps for {recipe}: {steps}."
+      ],
+      "phrases": [
+        "step",
+        "steps",
+        "method",
+        "methods",
+        "instruction",
+        "instructions",
+        "directions",
+        "procedure",
+        "how to",
+        "how do i make",
+        "how can i make",
+        "how do i cook",
+        "how can i cook",
+        "how do you cook",
+        "how do i prepare",
+        "how can i prepare",
+        "how do you prepare",
+        "cooking process",
+        "cooking instructions",
+        "walk me through",
+        "guide me through",
+        "way to cook",
+        "way of cooking",
+        "what do i do next",
+        "next step",
+        "what next",
+        "and then"
+      ]
+    },
+    {
+      "tag": "last_recipe",
+      "pattern": "\\b(?:what recipe did you recommend|what was the last recipe)\\b",
+      "responses": [
+        "The last recipe we discussed was {recipe}."
+      ]
+    },
+    {
+      "tag": "quantity",
+      "pattern": "\\bi need (?P<quantity>\\\\d+) (?P<unit>cups?|grams?|g|ml|tablespoons?|teaspoons?) of (?P<ingredient>[A-Za-z ]+)",
+      "responses": [
+        "You mentioned {quantity} {unit} of {ingredient}. I will keep that in mind."
+      ]
+    },
+    {
+      "tag": "servings",
+      "pattern": "\\bi am cooking for (?P<people>\\\\d+) people",
+      "responses": [
+        "Cooking for {people} people. You may need to adjust the recipe quantities."
+      ]
+    },
+    {
+      "tag": "timer",
+      "pattern": "\\bset a timer for (?P<minutes>\\\\d+) minutes",
+      "responses": [
+        "I noted {minutes} minutes. I cannot run a real timer, so please set one on your device."
+      ]
+    },
+    {
+      "tag": "cooked_duration",
+      "pattern": "\\bi cooked for (?P<minutes>\\\\d+) minutes",
+      "responses": [
+        "You cooked for {minutes} minutes. The right cooking time also depends on the food and method."
+      ]
+    },
+    {
+      "tag": "ingredient_count",
+      "pattern": "\\bi have (?P<quantity>\\\\d+) (?P<ingredient>[A-Za-z ]+)",
+      "responses": [
+        "You have {quantity} {ingredient}. Would you like an idea for using them?"
+      ]
+    },
+    {
+      "tag": "feeling",
+      "pattern": "\\b(?:i am|i'm|im) feeling (?P<feeling>[A-Za-z ]+)",
+      "responses": [
+        "You said you are feeling {feeling}. {feedback} What would you like to talk about?"
+      ]
+    },
+    {
+      "tag": "topic",
+      "pattern": "\\b(?:i want to talk about|let's talk about|can we talk about) (?P<topic>[A-Za-z ]+)",
+      "responses": [
+        "Of course, we can talk about {topic}. What would you like to know?",
+        "Sure! Tell me what interests you about {topic}."
+      ]
+    },
+    {
+      "tag": "back_to_food",
+      "pattern": "\\b(?:back to cooking|back to food|let'?s talk about food|return to food)\\b",
+      "responses": [
+        "Ok ok we back to food! We were just talking about {previous_topic}. You want to explore a recipe or ingredient?"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "pattern": "\\b(?:thanks|thank you)\\b",
+      "responses": [
+        "You are welcome! Happy cooking.",
+        "No problem. I hope you enjoy your food!"
+      ]
+    },
+    {
+      "tag": "affirmative",
+      "pattern": "^(?:yes|yes please|yeah|yeah please|yep|yup|sure|of course|please do|go ahead|okay|ok|sounds good|that would be great|absolutely|sure thing|sounds great|that sounds good|please)$",
+      "phrases": [
+        "yes",
+        "yes please",
+        "yeah",
+        "yeah please",
+        "yep",
+        "yup",
+        "sure",
+        "of course",
+        "please do",
+        "go ahead",
+        "okay",
+        "ok",
+        "sounds good",
+        "that would be great",
+        "absolutely",
+        "sure thing",
+        "sounds great",
+        "that sounds good",
+        "please"
+      ],
+      "responses": [
+        "Sure."
+      ]
+    },
+    {
+      "tag": "default",
+      "pattern": "default",
+      "responses": [
+        "I am not sure I understood. Could you tell me a little more? I can chat about food or another topic.",
+        "I don't have an answer for that yet, but I am listening. Could you explain a bit more?"
+      ]
+    }
+  ]
+}
